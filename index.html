@@ -25,6 +25,12 @@
     <script>
       tailwind.config = {
         theme: {
+          screen: {
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+          },
           extend: {
             colors: {
               bluelight: "#00baf2",
@@ -44,7 +50,7 @@
         </div>
         <nav class="w-100 mt-5">
           <ul
-            class="flex items-center content-center gap-8 capitalize font-bold font-sans text-lg cursor-pointer text-gray-600"
+            class="hidden lg:flex items-center justify-center gap-8 capitalize font-bold font-sans text-md xl:text-lg cursor-pointer text-gray-600"
           >
             <li>paytm for customer</li>
             <li>paytm for bussiness</li>
@@ -81,8 +87,10 @@
     </section>
 
     <!-- section 2 -->
-    <section class="bg-white py-32 flex pl-12 items-center gap-8">
-      <div>
+    <section
+      class="flex-col bg-white py-32 lg:flex lg:flex-row pl-12 items-center gap-8"
+    >
+      <div class="mb-20">
         <div>
           <div class="w-20">
             <img src="./assets/section2-left.png" alt="section left" />
@@ -361,9 +369,9 @@
       </h1>
 
       <div class="bg-white drop-shadow-xl rounded-lg">
-        <div class="p-24 flex">
+        <div class="p-24 flex flex-col lg:flex-row">
           <!-- left -->
-          <div>
+          <div class="mb-10">
             <div class="flex items-center mb-16">
               <img src="./images/wallet.png" alt="wallet" class="w-24" />
               <span class="font-semibold">Paytm<br />Wallet</span>
@@ -387,14 +395,18 @@
             </div>
           </div>
           <!-- right -->
-          <img src="./images/paytmphone.png" alt="paytm phone" class="w-1/2" />
+          <img
+            src="./images/paytmphone.png"
+            alt="paytm phone"
+            class="lg:w-1/2"
+          />
         </div>
       </div>
 
       <div class="bg-white drop-shadow-xl rounded-lg mt-16">
-        <div class="p-24 flex">
+        <div class="p-24 flex flex-col lg:flex-row">
           <!-- left -->
-          <div>
+          <div class="mb-20">
             <div class="flex items-center mb-16">
               <img src="./images/upi.png" alt="upi" class="w-24" />
               <span class="font-semibold ml-4">UPI Money <br />Transfer </span>
@@ -419,14 +431,14 @@
             </div>
           </div>
           <!-- right -->
-          <img src="./images/paid.png" alt="paid" class="w-1/2" />
+          <img src="./images/paid.png" alt="paid" class="lg:w-1/2" />
         </div>
       </div>
 
       <div class="bg-white drop-shadow-xl rounded-lg mt-16">
-        <div class="p-24 flex">
+        <div class="p-24 flex flex-col lg:flex-row">
           <!-- left -->
-          <div>
+          <div class="mb-20">
             <div class="flex items-center mb-16">
               <img src="./images/postpaid.png" alt="postpaid" class="w-40" />
             </div>
@@ -450,11 +462,11 @@
             </div>
           </div>
           <!-- right -->
-          <img src="./images/shopping.png" alt="shopping" class="w-96" />
+          <img src="./images/shopping.png" alt="shopping" class="lg:w-96" />
         </div>
       </div>
       <!-- two cards -->
-      <div class="flex justify-between mt-16 gap-10">
+      <div class="flex flex-col lg:flex-row lg:justify-between mt-16 gap-10">
         <!-- left -->
         <div class="bg-white rounded-lg px-16 pt-4">
           <div>
@@ -496,10 +508,10 @@
       <h1 class="mb-8 font-sans text-5xl font-bold">
         Financial Services by Paytm
       </h1>
-      <div class="bg-white">
-        <div class="flex">
+      <div class="bg-white flex-col lg:flex-row">
+        <div class="flex flex-col lg:flex-row">
           <!-- left -->
-          <div>
+          <div class="mb-20">
             <div class="flex items-center mb-16">
               <img
                 src="./images/paytmBanks.png"
@@ -528,7 +540,11 @@
             </div>
           </div>
           <!-- right -->
-          <img src="./images/paytmdebitcard.png" alt="shopping" class="w-96" />
+          <img
+            src="./images/paytmdebitcard.png"
+            alt="shopping"
+            class="lg:w-96"
+          />
         </div>
       </div>
     </section>
@@ -537,9 +553,9 @@
     <section
       class="bg-[url('./images/background.png')] p-20 bg-cover bg-center"
     >
-      <div class="flex justify-between gap-20">
+      <div class="flex flex-col justify-between gap-20 lg:flex-row">
         <!-- left -->
-        <img src="./images/pytmstocks.png" alt="paytmstocks" class="w-1/2" />
+        <img src="./images/pytmstocks.png" alt="paytmstocks" class="lg:w-1/2" />
         <!-- right -->
         <div>
           <img
@@ -569,7 +585,7 @@
 
     <!-- section 7 -->
     <section class="bg-white p-20 bg-cover bg-center">
-      <div class="flex justify-between gap-20">
+      <div class="flex flex-col justify-between gap-20 lg:flex-row">
         <!-- left -->
         <div>
           <img
@@ -592,18 +608,18 @@
           </div>
         </div>
         <!-- right -->
-        <img src="./images/paytmTravel.png" alt="paytmTravel" class="w-96" />
+        <img src="./images/paytmTravel.png" alt="paytmTravel" class="lg:w-96" />
       </div>
     </section>
 
     <!-- section 8 -->
     <section class="bg-slate-50 p-20 bg-cover bg-center">
-      <div class="flex justify-between gap-20">
+      <div class="flex flex-col justify-between gap-20 lg:flex-row">
         <!-- left -->
         <img
           src="./images/paytmcongrats.png"
           alt="paytmcongrats"
-          class="w-96"
+          class="lg:w-96"
         />
         <!-- right -->
         <div>
@@ -639,9 +655,9 @@
       </h1>
 
       <div class="bg-slate-50 drop-shadow-xl rounded-lg">
-        <div class="p-24 flex">
+        <div class="p-24 flex flex-col lg:flex-row">
           <!-- left -->
-          <div>
+          <div class="mb-20">
             <div class="flex items-center mb-16">
               <img src="./images/wallet.png" alt="wallet" class="w-24" />
               <span class="font-semibold">Paytm<br />Wallet</span>
@@ -665,14 +681,18 @@
             </div>
           </div>
           <!-- right -->
-          <img src="./images/paytmphone.png" alt="paytm phone" class="w-1/2" />
+          <img
+            src="./images/paytmphone.png"
+            alt="paytm phone"
+            class="lg:w-1/2"
+          />
         </div>
       </div>
 
       <div class="bg-slate-50 drop-shadow-lg rounded-lg mt-16">
-        <div class="py-24 pl-24 flex items-center">
+        <div class="py-24 pl-24 flex flex-col items-center lg:flex-row">
           <!-- left -->
-          <div>
+          <div class="mb-20">
             <div>
               <h2 class="font-bold text-4xl w-4/5 mb-4">
                 Accept payments<br />
@@ -692,7 +712,7 @@
             </div>
           </div>
           <!-- right -->
-          <img src="./images/paytmcart.png" alt="paytmcart" class="w-96" />
+          <img src="./images/paytmcart.png" alt="paytmcart" class="lg:w-96" />
         </div>
       </div>
     </section>
@@ -705,7 +725,7 @@
           Business Tools to help<br />
           your business grow
         </h1>
-        <div class="flex gap-10">
+        <div class="flex flex-col gap-10 lg:flex-row">
           <div class="">
             <img src="./images/posbilling.png" alt="posbilling" />
             <div>
