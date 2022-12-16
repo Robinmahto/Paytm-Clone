@@ -127,7 +127,9 @@
           <h1 class="mb-8 font-sans text-4xl font-bold text-white">
             Recharge & Pay Bills on Paytm.
           </h1>
-          <div class="flex justify-between items-center">
+          <div
+            class="grid grid-cols-2 gap-2 sm:grid sm:grid-cols-4 sm:gap-4 lg:flex lg:justify-between lg:items-center"
+          >
             <div
               class="w-36 p-4 cursor-pointer hover:bg-hovercolor transition ease-in-out rounded-lg drop-shadow-lg"
             >
@@ -248,7 +250,9 @@
           <h1 class="mb-8 font-sans text-4xl font-bold text-white">
             Book & Buy on Paytm.
           </h1>
-          <div class="flex justify-between items-center">
+          <div
+            class="grid grid-cols-2 gap-2 sm:grid sm:grid-cols-4 sm:gap-4 lg:flex lg:justify-between lg:items-center"
+          >
             <div
               class="w-36 p-4 cursor-pointer hover:bg-hovercolor transition ease-in-out rounded-lg drop-shadow-lg"
             >
@@ -791,8 +795,10 @@
 
     <!-- section 11 -->
 
-    <section class="bg-[#F0FBFF] p-32">
-      <div class="bg-white flex px-12 py-16 rounded gap-5">
+    <section class="bg-[#F0FBFF] p-16">
+      <div
+        class="bg-white grid grid-cols-1 gap-8 sm:grid sm:grid-cols-2 sm:gap-12 md:grid md:grid-cols-3 md:gap-8 lg:flex lg:px-12 lg:py-16 rounded lg:gap-5"
+      >
         <div>
           <img
             src="./images/1626420555412.png"
@@ -831,7 +837,9 @@
         </div>
       </div>
 
-      <div class="bg-white flex px-12 py-16 rounded gap-5 mt-10">
+      <div
+        class="bg-white grid grid-cols-1 gap-8 sm:grid sm:grid-cols-2 sm:gap-12 md:grid md:grid-cols-3 md:gap-8 lg:flex lg:px-12 lg:py-16 rounded lg:gap-5 mt-10"
+      >
         <div>
           <img
             src="./images/1626420555412.png"
@@ -846,28 +854,28 @@
             <p class="uppercase text-[#6CD6FD] cursor-pointer">Learn More</p>
           </div>
         </div>
-        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer">
+        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer p-5">
           <img src="./images/1627552693557.png" alt="" class="w-16" />
           <div class="p-2">
-            <h2 class="mt-4 font-bold text-white">Flat 14% Cashback</h2>
-            <p>With Code WELCOMEFLIGHT</p>
+            <h2 class="mt-4 font-bold text-white mb-3">Flat 14% Cashback</h2>
+            <p class="text-white">With Code WELCOMEFLIGHT</p>
           </div>
         </div>
-        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer">
+        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer p-5">
           <img src="./images/1627566096011.png" alt="" class="w-16" />
           <div class="p-4">
-            <h2 class="mt-4 font-bold text-white">100% Refund</h2>
-            <p>With Paytm's Cancellation Protect</p>
+            <h2 class="mt-4 font-bold text-white mb-3">100% Refund</h2>
+            <p class="text-white">With Paytm's Cancellation Protect</p>
           </div>
         </div>
-        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer">
+        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer p-5">
           <img src="./images/1627566172335.png" alt="" class="w-16" />
           <div class="p-2">
-            <h2 class="mt-4 font-bold text-white">Flat 10% Cashback</h2>
-            <p>With Code HAPPYBUS</p>
+            <h2 class="mt-4 font-bold text-white mb-3">Flat 10% Cashback</h2>
+            <p class="text-white">With Code HAPPYBUS</p>
           </div>
         </div>
-        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer">
+        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer p-5">
           <img src="./images/1627567062180.png" alt="" class="w-16" />
           <div class="p-2">
             <h2 class="mt-4 font-bold text-white">
@@ -875,7 +883,7 @@
             </h2>
           </div>
         </div>
-        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer">
+        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer p-5">
           <img src="./images/1627566492097.png" alt="" class="w-16" />
           <div class="p-2">
             <h2 class="mt-4 font-bold text-white">
@@ -883,15 +891,34 @@
             </h2>
           </div>
         </div>
-        <div class="bg-[#6CD6FD] p-1 rounded cursor-pointer">
-          <img src="./images/1627566396231.png" alt="" class="w-16" />
-          <div class="p-2">
-            <h2 class="mt-4 font-bold text-white">
-              PNR Status Check In Few Simple Clicks
-            </h2>
-          </div>
-        </div>
       </div>
     </section>
+
+    <!-- footer -->
+    <footer class="bg-[#f5f7fa]flex flex-col items-center  px-14 py-10 lg:flex lg:justify-between">
+      <div class="flex flex-col gap-8 lg:flex lg:items-center lg:gap-5">
+        <h2 class="font-semibold text-xl">
+          Download Paytm App <br />
+          to Pay from anywhere
+        </h2>
+        <div>
+          <img
+            src="https://pwebassets.paytm.com/frontendcommonweb/static/71229188.svg"
+            alt="apple logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://pwebassets.paytm.com/frontendcommonweb/static/33d9d7f1.svg"
+            alt="play-store logo"
+          />
+        </div>
+      </div>
+      <div class="flex items-center gap-8 text-2xl cursor-pointer mt-10">
+        <span><i class="fa-brands fa-facebook-f"></i></span>
+        <span><i class="fa-brands fa-instagram"></i></span>
+        <span><i class="fa-brands fa-twitter"></i></span>
+      </div>
+    </footer>
   </body>
 </html>
