@@ -1,6 +1,6 @@
-# Assignment - 16
+# Paytm-Clone
 
-## Project 16 [Live Link](https://paytm-clone.netlify.app/)
+## Project 16 [Live Link](https://paytm-clone-tailwindcss-16.netlify.app/)
 
 - ### skills used in project
   - Learn tailwindCSS Properties, Grid, flexbox etc.
